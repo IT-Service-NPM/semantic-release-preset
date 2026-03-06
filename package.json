@@ -38,21 +38,15 @@
 	],
 	"scripts": {},
 	"packageManager": "pnpm@10.30.3",
-	"devDependencies": {
+	"dependencies": {
 		"@anolilab/semantic-release-clean-package-json": "^5.2.0",
 		"@anolilab/semantic-release-pnpm": "^5.0.0",
 		"@anolilab/semantic-release-preset": "^13.1.1",
-		"@commitlint/cli": "^20.3.0",
-		"@commitlint/config-angular": "^20.3.0",
-		"@commitlint/config-conventional": "^20.3.0",
-		"@commitlint/types": "^20.2.0",
 		"@semantic-release/changelog": "^6.0.3",
-		"@semantic-release/commit-analyzer": "^13.0.0",
+		"@semantic-release/commit-analyzer": "^13.0.1",
 		"@semantic-release/git": "^10.0.1",
-		"@semantic-release/github": "^12.0.2",
-		"@semantic-release/release-notes-generator": "^14.0.1",
-		"conventional-changelog": "^7.2.0",
-		"conventional-changelog-conventionalcommits": "^9.2.0",
-		"semantic-release": "^25.0.2"
+		"@semantic-release/github": "^12.0.6",
+		"@semantic-release/release-notes-generator": "^14.1.0",
+		"semantic-release": "^25.0.3"
 	}
 }
