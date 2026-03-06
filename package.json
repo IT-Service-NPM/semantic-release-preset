@@ -1,0 +1,58 @@
+{
+	"private": true,
+	"name": "@it-service-npm/semantic-release-preset",
+	"version": "1.0.0",
+	"author": {
+		"name": "Sergei S. Betke",
+		"email": "Sergey.S.Betke@yandex.ru",
+		"url": "https://github.com/sergey-s-betke"
+	},
+	"homepage": "https://github.com/IT-Service-NPM/semantic-release-preset",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/IT-Service-NPM/semantic-release-preset.git"
+	},
+	"bugs": {
+		"url": "https://github.com/IT-Service-NPM/semantic-release-preset/issues"
+	},
+	"license": "MIT",
+	"engines": {
+		"node": ">=22.0"
+	},
+	"type": "module",
+	"exports": {
+		".": {
+			"import": "./config/with-pnpm.json",
+			"require": "./config/with-pnpm.json"
+		},
+		"./pnpm": {
+			"import": "./config/with-pnpm.json",
+			"require": "./config/with-pnpm.json"
+		},
+		"./package.json": "./package.json"
+	},
+	"main": "./config/with-pnpm.json",
+	"files": [
+		"README.md",
+		"config"
+	],
+	"scripts": {},
+	"packageManager": "pnpm@10.30.3",
+	"devDependencies": {
+		"@anolilab/semantic-release-clean-package-json": "^5.2.0",
+		"@anolilab/semantic-release-pnpm": "^5.0.0",
+		"@anolilab/semantic-release-preset": "^13.1.1",
+		"@commitlint/cli": "^20.3.0",
+		"@commitlint/config-angular": "^20.3.0",
+		"@commitlint/config-conventional": "^20.3.0",
+		"@commitlint/types": "^20.2.0",
+		"@semantic-release/changelog": "^6.0.3",
+		"@semantic-release/commit-analyzer": "^13.0.0",
+		"@semantic-release/git": "^10.0.1",
+		"@semantic-release/github": "^12.0.2",
+		"@semantic-release/release-notes-generator": "^14.0.1",
+		"conventional-changelog": "^7.2.0",
+		"conventional-changelog-conventionalcommits": "^9.2.0",
+		"semantic-release": "^25.0.2"
+	}
+}
