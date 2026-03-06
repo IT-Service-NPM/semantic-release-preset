@@ -22,16 +22,16 @@
 	"type": "module",
 	"exports": {
 		".": {
-			"import": "./config/with-pnpm.json",
-			"require": "./config/with-pnpm.json"
+			"import": "./config/with-pnpm.mjs",
+			"require": "./config/with-pnpm.mjs"
 		},
 		"./pnpm": {
-			"import": "./config/with-pnpm.json",
-			"require": "./config/with-pnpm.json"
+			"import": "./config/with-pnpm.mjs",
+			"require": "./config/with-pnpm.mjs"
 		},
 		"./package.json": "./package.json"
 	},
-	"main": "./config/with-pnpm.json",
+	"main": "./config/with-pnpm.mjs",
 	"files": [
 		"README.md",
 		"config"
