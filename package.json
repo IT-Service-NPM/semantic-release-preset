@@ -1,7 +1,9 @@
 {
-	"private": true,
 	"name": "@it-service-npm/semantic-release-preset",
-	"version": "1.0.0",
+	"version": "0.1.0",
+	"publishConfig": {
+		"access": "public"
+	},
 	"author": {
 		"name": "Sergei S. Betke",
 		"email": "Sergey.S.Betke@yandex.ru",
@@ -47,7 +49,6 @@
 		"@semantic-release/git": "^10.0.1",
 		"@semantic-release/github": "^12.0.6",
 		"@semantic-release/release-notes-generator": "^14.1.0",
-		"pnpm": "^10.30.3",
 		"semantic-release": "^25.0.3"
 	}
 }
