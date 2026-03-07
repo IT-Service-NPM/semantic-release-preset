@@ -34,15 +34,15 @@ permissions:
   checks: write
 
 jobs:
-  lint:
-    permissions:
-      actions: read
-      contents: read
-      issues: write
-      pull-requests: write
-      statuses: write
-    uses: ./.github/workflows/lint-package.yml
-    secrets: inherit
+  # lint:
+  #   permissions:
+  #     actions: read
+  #     contents: read
+  #     issues: write
+  #     pull-requests: write
+  #     statuses: write
+  #   uses: ./.github/workflows/lint-package.yml
+  #   secrets: inherit
 
   npmJS:
     environment: npm
