@@ -48,10 +48,10 @@ All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.`
     }],
     '@anolilab/semantic-release-clean-package-json',
-    '@anolilab/semantic-release-pnpm',
     ['@semantic-release/git', {
       message: 'chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}'
     }],
+    '@anolilab/semantic-release-pnpm',
     ['@semantic-release/github', {}]
   ]
 };
