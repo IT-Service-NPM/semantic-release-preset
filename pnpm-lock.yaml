@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@anolilab/semantic-release-clean-package-json':
-        specifier: ^5.2.0
-        version: 5.2.0(yaml@2.8.2)
+        specifier: ^5.5.14
+        version: 5.5.14(yaml@2.8.2)
       '@anolilab/semantic-release-pnpm':
         specifier: ^5.0.0
         version: 5.0.0(@types/node@25.3.5)(yaml@2.8.2)
@@ -56,6 +56,10 @@ packages:
 
   '@anolilab/semantic-release-clean-package-json@5.2.0':
     resolution: {integrity: sha512-hiZhrPJnCou7/xB6nnYMTFaEVVQy9LmvB0Dt2XM5q7ZAqI7tgilTh/c9iqUR7NSmWQL1ynOEjX4Pa9LyoJca7w==}
+    engines: {node: ^22.14.0 || >=24.10.0}
+
+  '@anolilab/semantic-release-clean-package-json@5.5.14':
+    resolution: {integrity: sha512-Z8SjV7LuQBE2HWCTWsvpOKIAuP0Gddwi3rBzmjv2uwpbtoMeFwPcNWg+kTjGdIpqz5rHX5hNJrgFeUko+XzMXA==}
     engines: {node: ^22.14.0 || >=24.10.0}
 
   '@anolilab/semantic-release-pnpm@5.0.0':
@@ -1325,8 +1329,12 @@ packages:
     resolution: {integrity: sha512-AXSAQJu79WGc79/3e9/CR77I/KQgeY1AhNvcShIH4PTcGYyC4xv6H4R4AUOwkPS5799KlVDAu8zExeCrkGquiA==}
     engines: {node: '>=20'}
 
-  type-fest@5.4.4:
-    resolution: {integrity: sha512-JnTrzGu+zPV3aXIUhnyWJj4z/wigMsdYajGLIYakqyOW1nPllzXEJee0QQbHj+CTIQtXGlAjuK0UY+2xTyjVAw==}
+  type-fest@5.6.0:
+    resolution: {integrity: sha512-8ZiHFm91orbSAe2PSAiSVBVko18pbhbiB3U9GglSzF/zCGkR+rxpHx6sEMCUm4kxY4LjDIUGgCfUMtwfZfjfUA==}
+    engines: {node: '>=20'}
+
+  type-fest@5.7.0:
+    resolution: {integrity: sha512-1URUxUqfHFM1c+zfSPsa3gnkO7Aq21qyH75SIduNYz4SzY964rn1X2vCMQaHSHhktiw+0kPa2iyb6PUpXqB6Vg==}
     engines: {node: '>=20'}
 
   typescript@5.9.3:
@@ -1480,6 +1488,15 @@ snapshots:
       '@visulima/fs': 4.1.0(yaml@2.8.2)
       '@visulima/path': 2.0.5
       type-fest: 5.4.3
+    transitivePeerDependencies:
+      - yaml
+
+  '@anolilab/semantic-release-clean-package-json@5.5.14(yaml@2.8.2)':
+    dependencies:
+      '@semantic-release/error': 4.0.0
+      '@visulima/fs': 4.1.0(yaml@2.8.2)
+      '@visulima/path': 2.0.5
+      type-fest: 5.6.0
     transitivePeerDependencies:
       - yaml
 
@@ -1787,7 +1804,7 @@ snapshots:
   '@visulima/fs@4.1.0(yaml@2.8.2)':
     dependencies:
       '@visulima/path': 2.0.5
-      type-fest: 5.4.3
+      type-fest: 5.7.0
     optionalDependencies:
       yaml: 2.8.2
 
@@ -2491,14 +2508,14 @@ snapshots:
     dependencies:
       find-up-simple: 1.0.1
       read-pkg: 10.1.0
-      type-fest: 5.4.4
+      type-fest: 5.7.0
 
   read-pkg@10.1.0:
     dependencies:
       '@types/normalize-package-data': 2.4.4
       normalize-package-data: 8.0.0
       parse-json: 8.3.0
-      type-fest: 5.4.4
+      type-fest: 5.7.0
       unicorn-magic: 0.4.0
 
   read-pkg@9.0.1:
@@ -2724,7 +2741,11 @@ snapshots:
     dependencies:
       tagged-tag: 1.0.0
 
-  type-fest@5.4.4:
+  type-fest@5.6.0:
+    dependencies:
+      tagged-tag: 1.0.0
+
+  type-fest@5.7.0:
     dependencies:
       tagged-tag: 1.0.0
 
